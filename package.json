@@ -1,0 +1,32 @@
+{
+  "name": "file2html",
+  "version": "0.1.0",
+  "description": "JS convertor of files to HTML and CSS code",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest --no-cache --config=./node_modules/file2html-dev-tools/jest/config.json"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "file2html-dev-tools": "git@github.com:file2html/file2html-dev-tools.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/file2html/file2html.git"
+  },
+  "keywords": [
+    "file2html",
+    "files",
+    "html",
+    "convert",
+    "docs",
+    "viewer"
+  ],
+  "author": "webschik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/file2html/file2html/issues"
+  },
+  "homepage": "https://github.com/file2html/file2html#readme"
+}
