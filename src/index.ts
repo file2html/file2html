@@ -20,7 +20,7 @@ export const FileTypes: {
     image: 5
 };
 
-type Partial<T> = {
+export type Partial<T> = {
     [P in keyof T]?: T[P];
 };
 

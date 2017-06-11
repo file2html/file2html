@@ -2,9 +2,12 @@
   "name": "file2html",
   "version": "0.1.0",
   "description": "JS convertor of files to HTML and CSS code",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "test": "./node_modules/.bin/jest --no-cache --config=./node_modules/file2html-dev-tools/jest/config.json"
+    "test": "./node_modules/.bin/jest --no-cache --config=./node_modules/file2html-dev-tools/jest/config.json",
+    "lint": "./node_modules/.bin/tslint \"src/**/*.ts\" \"test/unit/**/*.ts\"",
+    "build": "npm run lint && rm -rf lib && ./node_modules/.bin/tsc"
   },
   "dependencies": {
   },
