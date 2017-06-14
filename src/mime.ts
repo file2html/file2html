@@ -7,7 +7,9 @@ const mimeTypes: {[key: string]: string} = {
     svg: 'image/svg+xml',
     ico: 'image/x-icon',
     txt: 'tetx/plain',
-    docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    fb: 'application/x-fictionbook+xml',
+    fb2: 'application/x-fictionbook+xml'
 };
 
 export function lookup (filename: string) {
