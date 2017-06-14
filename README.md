@@ -5,14 +5,14 @@
 * [Promise API](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ## Supported formats
-- [x] Text                [file2html-text](https://github.com/file2html/file2html-text)   (.txt)
-- [x] Images              [file2html-image](https://github.com/file2html/file2html-image) (.png, .jpg, .gif, .svg, .ico, .wbmp)
-- [x] OOXML Documents     [file2html-ooxml](https://github.com/file2html/file2html-ooxml) (.docx)
+- [x] Text                [file2html-text](https://github.com/file2html/file2html-text)                 (.txt)
+- [x] Images              [file2html-image](https://github.com/file2html/file2html-image)               (.png, .jpg, .gif, .svg, .ico, .wbmp)
+- [x] OOXML Documents     [file2html-ooxml](https://github.com/file2html/file2html-ooxml)               (.docx)
 - [ ] OOXML Presentations (.pptx)
 - [ ] OOXML Spreadsheets  (.xlsx)
 - [ ] ODF Text Files      (.odt)
 - [ ] DSV                 (.csv, .tsv)
-- [ ] FictionBook         (.fb2)
+- [x] FictionBook         [file2html-fiction-book](https://github.com/file2html/file2html-fiction-book) (.fb2)
 - [ ] EPUB                (.epub)
 - [ ] RTF                 (.rtf)
 - [ ] WCBFF               (.doc)
