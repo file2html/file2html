@@ -10,7 +10,7 @@
 - [x] OOXML Documents     [file2html-ooxml](https://github.com/file2html/file2html-ooxml)               (.docx)
 - [ ] OOXML Presentations (.pptx)
 - [ ] OOXML Spreadsheets  (.xlsx)
-- [ ] ODF Text Files      (.odt)
+- [x] ODF Text Files      [file2html-odf](https://github.com/file2html/file2html-odf)                   (.odt)
 - [ ] DSV                 (.csv, .tsv)
 - [x] FictionBook         [file2html-fiction-book](https://github.com/file2html/file2html-fiction-book) (.fb2)
 - [ ] EPUB                (.epub)
