@@ -4,7 +4,7 @@
 ## Requirements
 * [Promise API](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), [polyfill](https://github.com/lahmatiy/es6-promise-polyfill)
 * [Encoding API](https://developer.mozilla.org/en-US/docs/Web/API/Encoding_API), [polyfill](https://github.com/inexorabletash/text-encoding)
-* [Object.assing](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign), [polyfill](https://github.com/ljharb/object.assign)
+* [Object.assign](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign), [polyfill](https://github.com/ljharb/object.assign)
 
 ## Supported formats
 - [x] Text                [file2html-text](https://github.com/file2html/file2html-text)                 (.txt)
