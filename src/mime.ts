@@ -6,7 +6,7 @@ const mimeTypes: {[key: string]: string} = {
     pjpeg: 'image/pjpeg',
     svg: 'image/svg+xml',
     ico: 'image/x-icon',
-    txt: 'tetx/plain',
+    txt: 'text/plain',
     docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     fb: 'application/x-fictionbook+xml',
     fb2: 'application/x-fictionbook+xml'
