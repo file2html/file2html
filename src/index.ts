@@ -1,3 +1,5 @@
+import {errorsNamespace} from './errors';
+
 let readers: Array<typeof Reader> = [];
 
 export type FileBuffer = ArrayBuffer|Buffer;
@@ -89,7 +91,7 @@ export function read (options: {fileBuffer: FileBuffer; meta: PartialFileMetaInf
     });
 
     if (!ReaderConstructor) {
-        return Promise.reject(new Error('file2html.errors.unsupportedFile')) as any;
+        return Promise.reject(new Error(`${ errorsNamespace }.unsupportedFile`)) as any;
     }
 
     const fileContent: Uint8Array = new Uint8Array(options.fileBuffer as ArrayBuffer);
