@@ -4,7 +4,7 @@
  * @param {TextEncoding.TextDecodeOptions} [options]
  * @returns {string}
  */
-export function decode (content: Uint8Array, encoding?: string, options?: TextEncoding.TextDecodeOptions): string {
+export function decode (content: Uint8Array, encoding?: string, options?: TextEncoding.TextDecoderOptions): string {
     return new TextDecoder(encoding, options).decode(content);
 }
 

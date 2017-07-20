@@ -9,7 +9,8 @@ const mimeTypes: {[key: string]: string} = {
     txt: 'text/plain',
     docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     fb: 'application/x-fictionbook+xml',
-    fb2: 'application/x-fictionbook+xml'
+    fb2: 'application/x-fictionbook+xml',
+    odt: 'application/vnd.oasis.opendocument.text'
 };
 
 export function lookup (filename: string) {
@@ -17,20 +18,4 @@ export function lookup (filename: string) {
     const extension: string = name.split('.').pop();
 
     return mimeTypes[extension];
-}
-
-export function isSupportedExtension (extension: string): boolean {
-    return Boolean(mimeTypes[extension.replace(/^\./, '')]);
-}
-
-export function isSupportedMimeType (mimeType: string): boolean {
-    for (const extension in mimeTypes) {
-        if (mimeTypes.hasOwnProperty(extension)) {
-            if (mimeType === mimeTypes[extension]) {
-                return true;
-            }
-        }
-    }
-
-    return false;
 }
