@@ -11,7 +11,9 @@ const mimeTypes: {[key: string]: string} = {
     fb: 'application/x-fictionbook+xml',
     fb2: 'application/x-fictionbook+xml',
     odt: 'application/vnd.oasis.opendocument.text',
-    epub: 'application/epub+zip'
+    epub: 'application/epub+zip',
+    woff: 'application/font-woff',
+    woff2: 'application/font-woff2'
 };
 
 export function lookup (filename: string) {
