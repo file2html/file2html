@@ -10,7 +10,8 @@ const mimeTypes: {[key: string]: string} = {
     docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     fb: 'application/x-fictionbook+xml',
     fb2: 'application/x-fictionbook+xml',
-    odt: 'application/vnd.oasis.opendocument.text'
+    odt: 'application/vnd.oasis.opendocument.text',
+    epub: 'application/epub+zip'
 };
 
 export function lookup (filename: string) {
