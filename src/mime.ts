@@ -13,7 +13,10 @@ const mimeTypes: {[key: string]: string} = {
     odt: 'application/vnd.oasis.opendocument.text',
     epub: 'application/epub+zip',
     woff: 'application/font-woff',
-    woff2: 'application/font-woff2'
+    woff2: 'application/font-woff2',
+    csv: 'text/csv',
+    tsv: 'text/tab-separated-values',
+    tab: 'text/tab-separated-values'
 };
 
 export function lookup (filename: string) {
