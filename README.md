@@ -21,7 +21,7 @@
 - [x] ODF Text Files      [file2html-odf](https://github.com/file2html/file2html-odf)                   (.odt)
 - [ ] DSV                 (.csv, .tsv)
 - [x] FictionBook         [file2html-fiction-book](https://github.com/file2html/file2html-fiction-book) (.fb2)
-- [ ] EPUB                (.epub)
+- [x] EPUB                [file2html-epub](https://github.com/file2html/file2html-epub)                 (.epub)
 - [ ] RTF                 (.rtf)
 - [ ] WCBFF               (.doc)
 
