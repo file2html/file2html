@@ -10,6 +10,7 @@ const mimeTypes: {[key: string]: string} = {
     docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     fb: 'application/x-fictionbook+xml',
     fb2: 'application/x-fictionbook+xml',
+    'fb2.zip': 'application/x-zip-compressed-fb2',
     odt: 'application/vnd.oasis.opendocument.text',
     epub: 'application/epub+zip',
     woff: 'application/font-woff',
@@ -20,8 +21,19 @@ const mimeTypes: {[key: string]: string} = {
 };
 
 export function lookup (filename: string) {
-    const name: string = filename.toLowerCase();
-    const extension: string = name.split('.').pop();
+    if (!filename) {
+        return undefined;
+    }
 
-    return mimeTypes[extension];
+    const preparedFilename: string = filename.toLowerCase();
+
+    for (const extension in mimeTypes) {
+        if (mimeTypes.hasOwnProperty(extension)) {
+            const {length} = extension;
+
+            if (preparedFilename.slice(-length) === extension) {
+                return mimeTypes[extension];
+            }
+        }
+    }
 }
