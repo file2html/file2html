@@ -110,3 +110,9 @@ file2html.read({
         content: string; // html markup as a string
     }
 ```
+
+## Showcase
+### StormFiles
+Browser extension, file viewer:
+  * [Chrome extension](https://chrome.google.com/webstore/detail/stormfiles/ickghndjocahgacnfaakbmbokmfneahd)
+  * [Firefox extension](https://addons.mozilla.org/firefox/addon/stormfiles)
