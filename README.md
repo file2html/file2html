@@ -22,6 +22,7 @@
 - [x] DSV                 [file2html-dsv](https://github.com/file2html/file2html-dsv)                   (.csv, .tsv)
 - [x] FictionBook         [file2html-fiction-book](https://github.com/file2html/file2html-fiction-book) (.fb2)
 - [x] EPUB                [file2html-epub](https://github.com/file2html/file2html-epub)                 (.epub)
+- [ ] DjVu                (.djvu, .djv)
 - [ ] RTF                 (.rtf)
 - [ ] WCBFF               (.doc)
 
