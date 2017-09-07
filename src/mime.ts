@@ -17,7 +17,10 @@ const mimeTypes: {[key: string]: string} = {
     woff2: 'application/font-woff2',
     csv: 'text/csv',
     tsv: 'text/tab-separated-values',
-    tab: 'text/tab-separated-values'
+    tab: 'text/tab-separated-values',
+    djvu: 'image/vnd.djvu',
+    djv: 'image/vnd.djvu',
+    zip: 'application/zip'
 };
 
 export function lookup (filename: string) {

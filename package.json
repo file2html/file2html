@@ -1,6 +1,6 @@
 {
   "name": "file2html",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "JS convertor of files to HTML and CSS code",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
