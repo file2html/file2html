@@ -7,11 +7,13 @@ const mimeTypes: {[key: string]: string} = {
     svg: 'image/svg+xml',
     ico: 'image/x-icon',
     txt: 'text/plain',
+    doc: 'application/msword',
     docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     fb: 'application/x-fictionbook+xml',
     fb2: 'application/x-fictionbook+xml',
     'fb2.zip': 'application/x-zip-compressed-fb2',
     odt: 'application/vnd.oasis.opendocument.text',
+    sxw: 'application/vnd.sun.xml.writer',
     epub: 'application/epub+zip',
     woff: 'application/font-woff',
     woff2: 'application/font-woff2',
@@ -20,7 +22,8 @@ const mimeTypes: {[key: string]: string} = {
     tab: 'text/tab-separated-values',
     djvu: 'image/vnd.djvu',
     djv: 'image/vnd.djvu',
-    zip: 'application/zip'
+    zip: 'application/zip',
+    rtf: 'application/rtf'
 };
 
 export function lookup (filename: string) {
