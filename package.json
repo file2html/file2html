@@ -8,13 +8,15 @@
     "lib/*.*"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/jest --no-cache --config=./node_modules/file2html-dev-tools/jest/config.json",
+    "test": "./node_modules/.bin/jest --no-cache",
     "lint": "./node_modules/.bin/tslint \"src/**/*.ts\" \"test/unit/**/*.ts\"",
-    "build": "npm run lint && rm -rf lib && ./node_modules/.bin/tsc"
+    "build": "npm run lint && rm -rf lib && ./node_modules/.bin/tsc",
+    "precoverage": "npm run test",
+    "coverage": "cat ./test/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "file2html-dev-tools": "git+https://github.com/file2html/file2html-dev-tools.git#v1.0.0"
   },
   "repository": {
@@ -34,5 +36,31 @@
   "bugs": {
     "url": "https://github.com/file2html/file2html/issues"
   },
-  "homepage": "https://github.com/file2html/file2html#readme"
+  "homepage": "https://github.com/file2html/file2html#readme",
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "test/coverage",
+    "coverageReporters": [
+      "cobertura",
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/*.ts"
+    ],
+    "testRegex": "(/test/unit/.*|\\.(spec))\\.(ts)$",
+    "transform": {
+      ".*": "./node_modules/file2html-dev-tools/jest/preprocessor.js"
+    },
+    "setupTestFrameworkScriptFile": "./node_modules/file2html-dev-tools/jest/setup.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/test/e2e/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
 }
