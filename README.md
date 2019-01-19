@@ -1,6 +1,5 @@
 # file2html
-[![Build Status](https://secure.travis-ci.org/file2html/file2html.png?branch=master)](https://travis-ci.org/file2html/file2html)
-[![npm](https://img.shields.io/npm/dm/file2html.svg)](https://www.npmjs.com/package/file2html)
+[![Build Status](https://travis-ci.org/file2html/file2html.svg?branch=master)](https://travis-ci.org/file2html/file2html)[![npm](https://img.shields.io/npm/dm/file2html.svg)](https://www.npmjs.com/package/file2html)
 [![npm](https://img.shields.io/npm/v/file2html.svg)](https://www.npmjs.com/package/file2html)
 [![npm](https://img.shields.io/npm/l/file2html.svg)](https://www.npmjs.com/package/file2html)
 [![Coverage Status](https://coveralls.io/repos/github/file2html/file2html/badge.svg?branch=master)](https://coveralls.io/github/file2html/file2html?branch=master)
