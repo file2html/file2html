@@ -23,7 +23,8 @@ const mimeTypes: {[key: string]: string} = {
     djvu: 'image/vnd.djvu',
     djv: 'image/vnd.djvu',
     zip: 'application/zip',
-    rtf: 'application/rtf'
+    rtf: 'application/rtf',
+    pages: 'application/vnd.apple.pages'
 };
 
 export function lookup (filename: string) {
@@ -34,6 +35,7 @@ export function lookup (filename: string) {
     const preparedFilename: string = filename.toLowerCase();
 
     for (const extension in mimeTypes) {
+        // istanbul ignore else
         if (mimeTypes.hasOwnProperty(extension)) {
             const {length} = extension;
 
