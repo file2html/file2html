@@ -115,3 +115,7 @@ file2html.read({
 Browser extension, file viewer:
   * [Chrome extension](https://chrome.google.com/webstore/detail/stormfiles/ickghndjocahgacnfaakbmbokmfneahd)
   * [Firefox extension](https://addons.mozilla.org/firefox/addon/stormfiles)
+  
+### Examples
+Vanilla JS: https://codesandbox.io/s/file2html-docx-example-for-javascript-r7lrw
+React: https://codesandbox.io/s/file2html-docx-example-for-react-04w4e
